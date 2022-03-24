@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="contactstyle.css" />
+    <title>Contact | Make It Yours Apparel</title>
+  </head>
+  <body>
+
+    <div movingsearch>  <!-- udemy day 4 hidden search-->
+      <div class="search">
+        <input type="text" class="input" placeholder="Search...">
+        <button class="btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div ourlogo>
+      <div class = "logo">
+        <img class = "logo",  src="makeityourslogo.png" alt="Make It Yours Logo">
+      </div>
+    </div>
+    
+
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="flex-container"> <!--https://coder-coder.com/display-divs-side-by-side/-->
+        <div class = "flex-child contact">
+          <h1> Contact Us!</h1>
+            <form>
+              <div class="contactform">
+                  <div>
+                    <label for="first">First Name: </label>
+                    <input type="text" name="first" id="first" placeholder="John" required>
+                  </div>
+                  <div>
+                    <label for="last">Last Name: </label>
+                    <input type="text" name="last" id="last" placeholder="Doe" required>
+                  </div>
+                  <div>
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="last" placeholder="JohnDoe@email.com" required>
+                  </div>
+                  <div>
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" rows="10" cols="50" placeholder="Type Here..." required></textarea>
+                  </div>
+                  <br><br>
+                  <div class = "submit-btn">
+                    <input type="submit">
+                  </div>
+                </div>
+            </form> 
+        </div><!--flex-child contact-->
+        
+        <div class = "flex-child review" style="border: 2px solid #fff; width: 100%; height:500px;">
+          <h1>Write A Review</h1>
+            <form>
+              <div class="review">
+                <div>
+                  <label for="first">First Name: </label>
+                  <input type="text" name="first" id="first" placeholder="Optional">
+                </div>
+                <div>
+                  <label for="last">Last Name: </label>
+                  <input type="text" name="last" id="last" placeholder="Optional">
+                </div>
+                <div>
+                  <label for="rating">Rating: </label>
+                  <input type="checkbox" name="rating" id="star-1">
+                  <input type="checkbox" name="rating" id="star-2">
+                  <input type="checkbox" name="rating" id="star-3">
+                  <input type="checkbox" name="rating" id="star-4">
+                  <input type="checkbox" name="rating" id="star-5">
+                </div>
+                <div>
+                  <label for="message">Message: </label>
+                  <textarea id="message" name="message" rows="10" cols="50" placeholder="Write your review here..." required></textarea>
+                </div>
+                <br><br>
+                <div style = "overflow: hidden; float: right; padding-right: 75px;">
+                  <input type="submit">
+                </div>
+              </div> <!--review-->
+            </form>        
+        </div> <!-- flex-child review -->
+      </div> <!--flex-container-->
+
+
+      <div class = "support">
+        <h1> Need Support? Have Questions?</h1>
+        <h2>Call Us!</h2>
+        <p>Telephone: 123-456-7890</p>
+        <h2>Email Us!</h2>
+        <p>Email: makeityours_apparel@gmail.com </p>
+        <h2>Follow us on Social Media!</h2>
+        <p> Instagram: @makeityours_apparel <br>
+            TikTok: @makeityours_apparel <br>
+            Twitter: @makeityours_apparel 
+        </p>
+      </div>
+    </div> <!--container class-->
+
+    <nav> <!-- udemy day 3 rotating nav-->
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html"> Home</a></li>
+        <li><i class="fas fa-shopping-cart"></i><a href="shop.html"> Shop</a></li>
+        <li><i class="fas fa-envelope"></i><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </nav>
+    <script src="contactscript.js"></script>
+  </body>
+</html>

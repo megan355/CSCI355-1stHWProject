@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', sans-serif;
+  background-color: #fff;
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.search {
+  position:relative;
+  float:right;
+  margin-right: 100px;
+  height: 50px;  
+}
+
+.search .input {
+  background-color: #fff;
+  border-radius: 24px;
+  border-color: #2f4e68;
+  font-size: 14px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  margin-top: 25px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  background-color: #fff;
+  border-radius: 50%;
+  border-color: #2f4e68;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  margin-top: 25px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover{
+  background-color: #2f4e68;
+  border-color: #fff;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+}
+
+.logo{
+  float: right;
+  margin-top: 5px;
+  margin-right: 140px;
+  margin-bottom: 100px;
+  width: 40vw;
+  height: 8vw;
+}
+
+.container {
+  background-image: linear-gradient(#fdbe83, #c8a3b5, #2f4e68);
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  padding-bottom: 10px;
+  width: 100vw;
+  min-height: 50vh;
+  padding: 10vh;
+}
+
+.container.show-nav {
+  transform: rotate(-25deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #2f4e68;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #2f4e68;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+
+nav a{
+  color: #2f4e68;
+  text-decoration: none;
+  transition: all 0.9s;
+}
+
+nav a:hover {
+  color: #fdbe83;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.flex-child {
+  width: 100%;
+  height:500px;
+  flex: 2;
+  border: 2px solid #fff;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+.flex-child.contactform {
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding: 0 .625em;
+}
+
+.support h1{
+  color: #fff;
+  text-shadow:1px 1px 5px #fdbe83, 1px 1px 5px #fdbe83;
+  font-family: Optima, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.support h2{
+  color: #fdbe83;
+}
+
+h1 {
+  color: #2f4e68;
+  font-family: Optima, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+}
+
+.submit-btn{
+  overflow: hidden; 
+  float: right;
+  padding-right: 75px;
+}
+
+
+input[type=submit] {
+  font-family: Optima, sans-serif;
+  font-size: 16px;
+  width: 5em;
+  height: 2.5em;
+  color: #fff; 
+  background:#2f4e68;; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 20px; 
+}
+
+input[type=submit]:hover {
+  color:#2f4e68; 
+  background: #fff; 
+}
+
+.review:nth-child(2) {
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding: 0 .625em;
+}
+
+label:nth-child(2) {
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+}

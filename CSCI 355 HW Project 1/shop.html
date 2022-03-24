@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="shopstyle.css" />
+    <title>Shop | Make It Yours Apparel</title>
+  </head>
+
+  <body>
+    <div movingsearch> <!-- udemy day 4 hidden search-->
+      <div class="search">
+        <input type="text" class="input" placeholder="Search...">
+        <button class="btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div ourlogo>
+      <div class = "logo">
+        <img class = "logo",  src="makeityourslogo.png" alt="Make It Yours Logo">
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    
+
+      <div class="content">
+        <div class = "wrapper">
+          <h1>Shop</h1> 
+          <a href = #size-charts><button class="size-btns">All Size Charts</button></a>
+          <a href = #top-charts><button class="size-btns">Tops Size Charts</button></a>
+          <a href = #bottom-charts><button class="size-btns">Bottoms Size Charts</button></a>
+          <a href = #hat-charts><button class="size-btns">Hats Size Charts</button></a>
+        </div> <!--wrapper class-->
+
+        <div>
+          <table class = "shopping-table">
+              <tr>
+                <th colspan= "4"><h2>Choose Your Apparel</h2></th>
+              </tr>
+              <tr>
+                <td><img class = "tshirt",  src="clothesimages/tshirt.png" alt=""></td>
+                <td><img class = "crewneck-sweatshirt",  src="clothesimages/crewneck_sweatshirt.png" alt=""></td>
+                <td><img class = "hoodie",  src="clothesimages/hoodie.png" alt=""></td>
+                <td><img class = "tank-top",  src="clothesimages/tanktop.png" alt=""></td>
+              </tr>
+              <tr>
+                <td class = "product-names">Classic T Shirt</td>
+                <td class = "product-names">Classic Crew Neck Sweatshirt</td>
+                <td class = "product-names">Classic Hoodie</td>
+                <td class = "product-names">Classic Tank Top</td>
+              </tr>
+              <tr>
+                <td class = "product-descriptions">100% Cotton Blend<br>Crew Neck<br>XS-XL Sizes Available</td>
+                <td class = "product-descriptions">Poly/Cotton Blend<br>Crew Neck<br>XS-XL Sizes Available</td>
+                <td class = "product-descriptions">Poly/Cotton Blend<br>Double Lined Hoodie<br>XS-XL Sizes Available</td>
+                <td class = "product-descriptions">100% Cotton Blend<br>Crew Neck<br>XS-XL Sizes Available</td>
+              </tr>
+              <tr>
+                <td>$12.00</td>
+                <td>$20.00</td>
+                <td>$25.00</td>
+                <td>$10.00</td>
+              </tr>
+
+              <tr>
+                <td><img class = "sweatpants",  src="clothesimages/sweatpants.png" alt=""></td>
+                <td><img class = "shorts",  src="clothesimages/shorts.png" alt=""></td>
+                <td><img class = "cap",  src="clothesimages/cap.png" alt=""></td>
+                <td><img class = "beanie",  src="clothesimages/beanie.png" alt=""></td>
+              </tr>
+              <tr>
+                <td class = "product-names">Classic Sweatpants</td>
+                <td class = "product-names">Classic Shorts</td>
+                <td class = "product-names">Classic Baseball Cap</td>
+                <td class = "product-names">Classic Beanie</td>
+              </tr>
+              <tr>
+                <td class = "product-descriptions">Cotton/Poly Fleece Blend<br>Elastic w/ String Waistband<br>XS-XL Sizes Available</td>
+                <td class = "product-descriptions">Cotton/Poly Fleece Blend<br>Elastic w/ String Waistband<br>XS-XL Sizes Available</td>
+                <td class = "product-descriptions">6 Panel Hat w/ Curved Visor<br>Adjustable Buckle Closure<br>One Size Only</td>
+                <td class = "product-descriptions">Knitted w/ Fleece Lining<br>Soft Material<br>One Size Only<td>
+              </tr>
+              <tr>
+                <td>$22.00</td>
+                <td>$20.00</td>
+                <td>$18.00</td>
+                <td>$15.00</td>
+              </tr>
+          </table> 
+        </div> 
+
+        <br>
+        <h2>Make It Yours</h2>
+        <form id = "make-it-yours">
+            <div class = "apparel">
+              <h3>Apparel:</h3>
+                <input list="apparel-list">
+                <datalist id="apparel-list">
+                    <option id="tshirt" value="Classic T Shirt">
+                    <option id="sweatshirt" value="Classic Crew Neck Sweatshirt">
+                    <option id="hoodie" value="Classic Hoodie">
+                    <option id="tanktop" value="Classic Tank Top">
+                    <option id="sweatpants" value="Classic Sweatpants">
+                    <option id="shorts" value="Classic Shorts">
+                    <option id="cap" value="Classic Baseball Cap">
+                    <option id="beanie" value="Classic Beanie">
+                </datalist>
+            </div>
+            <br>
+            <div class = "size">
+              <h3>Size:</h3>
+                  <input type="radio" name="sizes" value="onesize" id="onesize">
+                  <label for="onesize">One Size</label>
+                  <input type="radio" name="sizes" value="xsmall" id="xsmall">
+                  <label for="xsmall">X Small</label>
+                  <input type="radio" name="sizes" value="small" id="small">
+                  <label for="small">Small</label>
+                  <input type="radio" name="sizes" value="medium" id="medium">
+                  <label for="medium">Medium</label>
+                  <input type="radio" name="sizes" value="large" id="large">
+                  <label for="large">Large</label>
+                  <input type="radio" name="sizes" value="xlarge" id="xlarge">
+                  <label for="xlarge">X Large</label>
+            </div>
+            <br><br>
+            <h3>Apparel Color:</h3>
+              <input type="radio" name="color" value="maroon" id="maroon">
+              <label for="maroon">Maroon</label>
+              <img class = "color-option",  src="coloroptions/maroon.png" alt="Maroon"> <br><br>
+              <input type="radio" name="color" value="red" id="red">
+              <label for="red">Red</label>
+              <img class = "color-option",  src="coloroptions/red.png" alt="Red"> <br><br>
+              <input type="radio" name="color" value="orange" id="orange">
+              <label for="orange">Orange</label>
+              <img class = "color-option",  src="coloroptions/orange.png" alt="Orange"> <br><br>
+              <input type="radio" name="color" value="yellow" id="yellow">
+              <label for="yellow">Yellow</label>
+              <img class = "color-option",  src="coloroptions/yellow.png" alt="Yellow"> <br><br>
+              <input type="radio" name="color" value="lime" id="lime">
+              <label for="lime">Lime Green</label>
+              <img class = "color-option",  src="coloroptions/lime.png" alt="Lime"> <br><br>
+              <input type="radio" name="color" value="green" id="green">
+              <label for="green">Green</label>
+              <img class = "color-option",  src="coloroptions/green.png" alt="Green"> <br><br>
+              <input type="radio" name="color" value="teal" id="teal">
+              <label for="teal">Teal</label>
+              <img class = "color-option",  src="coloroptions/teal.png" alt="Teal"> <br><br>
+              <input type="radio" name="color" value="lightblue" id="lightblue">
+              <label for="lightblue">Light Blue</label>
+              <img class = "color-option",  src="coloroptions/lightblue.png" alt="Light Blue"> <br><br>
+              <input type="radio" name="color" value="blue" id="blue">
+              <label for="blue">Blue</label>
+              <img class = "color-option",  src="coloroptions/blue.png" alt="Blue"> <br><br>
+              <input type="radio" name="color" value="navy" id="navy">
+              <label for="navy">Navy</label>
+              <img class = "color-option",  src="coloroptions/navy.png" alt="Navy"> <br><br>
+              <input type="radio" name="color" value="purple" id="purple">
+              <label for="purple">Purple</label>
+              <img class = "color-option",  src="coloroptions/purple.png" alt="Purple"> <br><br>
+              <input type="radio" name="color" value="magenta" id="magenta">
+              <label for="margenta">Margenta</label>
+              <img class = "color-option",  src="coloroptions/magenta.png" alt="Magenta"> <br><br>
+              <input type="radio" name="color" value="pink" id="pink">
+              <label for="pink">Pink</label>
+              <img class = "color-option",  src="coloroptions/pink.png" alt="Pink"> <br><br>
+              <input type="radio" name="color" value="black" id="black">
+              <label for="black">Black</label>
+              <img class = "color-option",  src="coloroptions/black.png" alt="Black"> <br><br>
+              <input type="radio" name="color" value="gray" id="Grey">
+              <label for="grey">Grey</label>
+              <img class = "color-option",  src="coloroptions/gray.png" alt="Gray"> <br><br>
+              <input type="radio" name="color" value="beige" id="beige">
+              <label for="beige">Beige</label>
+              <img class = "color-option",  src="coloroptions/beige.png" alt="Beige"> <br><br>
+              <input type="radio" name="color" value="brown" id="brown">
+              <label for="brown">Brown</label>
+              <img class = "color-option",  src="coloroptions/brown.png" alt="Brown"> <br><br>
+              <input type="radio" name="color" value="white" id="white">
+              <label for="white">White</label>
+              <img class = "color-option",  src="coloroptions/white.png" alt="White">
+              <br><br>
+            <h3>Add Text:</h3>
+              <textarea name= "addtext" id = "addtext" rows = 3 cols = 50 ></textarea>
+              <br>
+            <h3>Text Font:</h3>
+              <input list="font-list">
+              <datalist id="font-list">
+                  <option value="Arial">
+                  <option value="Courier">
+                  <option value="Comic Sans MS">
+                  <option value="Impact">
+                  <option value="Academy">
+                  <option value="Times New Roman">
+                  <option value="Baguet Script"></option>
+              </datalist>
+              <br>
+            <h3>Text Color:</h3>
+              <label for="text-color">Choose any color for your text! </label>
+              <input type="color" value="#fff">
+            <h3>Upload Image:</h3>
+              <input type="file" name="picture" id="picture">
+            <h3>Quantity:</h3>
+              <input id="quantity" type="number" value="0" min = "0">
+              <br><br>
+            <input type="submit" value = "ADD TO CART">
+            <input type="submit" value = "VIEW CART">
+        </form>
+        
+        <div id = size-charts>
+          <h1> Size Charts </h1>
+            <h2  id = "top-charts"> Tops </h2>
+              <table class = "sizing-table">
+                <tr>
+                  <th colspan = "3"> Classic T Shirt</th>
+                </tr>
+                <tr>
+                  <th> Size </th>
+                  <th> Chest </th>
+                  <th> Waist </th>
+                </tr> 
+                <tr>
+                  <td> X Small </td>
+                  <td> 30 - 32 </td>
+                  <td> 26 - 28 </td>
+                </tr>  
+                <tr>
+                  <td> Small </td>
+                  <td> 34 - 36 </td>
+                  <td> 30 - 32 </td>
+                </tr> 
+                <tr>
+                  <td> Medium </td>
+                  <td> 38 - 40 </td>
+                  <td> 34 - 36 </td>
+                </tr> 
+                <tr>
+                  <td> Large </td>
+                  <td> 42 - 44 </td>
+                  <td> 38 - 40</td>
+                </tr>
+                <tr>
+                  <td> X Large </td>
+                  <td> 46 - 48 </td>
+                  <td> 42 - 44</td>
+                </tr>             
+              </table>
+
+              <table class = "sizing-table">
+                <tr>
+                  <th colspan = "3"> Classic Crew Neck Sweatshirt</th>
+                </tr>
+                <tr>
+                  <th> Size </th>
+                  <th> Chest </th>
+                  <th> Waist </th>
+                </tr> 
+                <tr>
+                  <td> X Small </td>
+                  <td> 30 - 32 </td>
+                  <td> 26 - 28 </td>
+                </tr>  
+                <tr>
+                  <td> Small </td>
+                  <td> 34 - 36 </td>
+                  <td> 30 - 32 </td>
+                </tr> 
+                <tr>
+                  <td> Medium </td>
+                  <td> 38 - 40 </td>
+                  <td> 34 - 36 </td>
+                </tr> 
+                <tr>
+                  <td> Large </td>
+                  <td> 42 - 44 </td>
+                  <td> 38 - 40</td>
+                </tr>
+                <tr>
+                  <td> X Large </td>
+                  <td> 46 - 48 </td>
+                  <td> 42 - 44</td>
+                </tr>             
+              </table>
+
+              <table class = "sizing-table">
+                <tr>
+                  <th colspan = "3"> Classic Hoodie</th>
+                </tr>
+                <tr>
+                  <th> Size </th>
+                  <th> Chest </th>
+                  <th> Waist </th>
+                </tr> 
+                <tr>
+                  <td> X Small </td>
+                  <td> 30 - 32 </td>
+                  <td> 26 - 28 </td>
+                </tr>  
+                <tr>
+                  <td> Small </td>
+                  <td> 34 - 36 </td>
+                  <td> 30 - 32 </td>
+                </tr> 
+                <tr>
+                  <td> Medium </td>
+                  <td> 38 - 40 </td>
+                  <td> 34 - 36 </td>
+                </tr> 
+                <tr>
+                  <td> Large </td>
+                  <td> 42 - 44 </td>
+                  <td> 38 - 40</td>
+                </tr>
+                <tr>
+                  <td> X Large </td>
+                  <td> 46 - 48 </td>
+                  <td> 42 - 44</td>
+                </tr>             
+              </table>
+
+              <table class = "sizing-table">
+                <tr>
+                  <th colspan = "3"> Classic Tank Top</th>
+                </tr>
+                <tr>
+                  <th> Size </th>
+                  <th> Chest </th>
+                  <th> Waist </th>
+                </tr> 
+                <tr>
+                  <td> X Small </td>
+                  <td> 32 - 33 </td>
+                  <td> 27 - 28 </td>
+                </tr>  
+                <tr>
+                  <td> Small </td>
+                  <td> 34 - 35 </td>
+                  <td> 28.5 - 29.5</td>
+                </tr> 
+                <tr>
+                  <td> Medium </td>
+                  <td> 36 - 37 </td>
+                  <td> 30.5 - 31.5 </td>
+                </tr> 
+                <tr>
+                  <td> Large </td>
+                  <td> 38.5 - 40</td>
+                  <td> 33 - 34.5</td>
+                </tr>
+                <tr>
+                  <td> X Large </td>
+                  <td> 42 - 44 </td>
+                  <td> 36.5 - 39</td>
+                </tr>             
+              </table>
+
+            <h2  id = "bottom-charts"> Bottoms </h2>
+              <table class = "sizing-table">
+                <tr>
+                  <th colspan = "3"> Classic Sweatpants</th>
+                </tr>
+                <tr>
+                  <th> Size </th>
+                  <th> Waist </th>
+                  <th> Inseam </th>
+                </tr> 
+                <tr>
+                  <td> X Small </td>
+                  <td> 26 </td>
+                  <td> 29 </td>
+                </tr>  
+                <tr>
+                  <td> Small </td>
+                  <td> 28 - 30 </td>
+                  <td> 30</td>
+                </tr> 
+                <tr>
+                  <td> Medium </td>
+                  <td> 32 - 34 </td>
+                  <td> 31 </td>
+                </tr> 
+                <tr>
+                  <td> Large </td>
+                  <td> 36 - 38</td>
+                  <td> 32</td>
+                </tr>
+                <tr>
+                  <td> X Large </td>
+                  <td> 40 - 42</td>
+                  <td> 32.5</td>
+                </tr>             
+              </table>
+
+              <table class = "sizing-table">
+                <tr>
+                  <th colspan = "3"> Classic Shorts</th>
+                </tr>
+                <tr>
+                  <th> Size </th>
+                  <th> Waist </th>
+                  <th> Inseam </th>
+                </tr> 
+                <tr>
+                  <td> X Small </td>
+                  <td> 26 </td>
+                  <td> 29 </td>
+                </tr>  
+                <tr>
+                  <td> Small </td>
+                  <td> 28 - 30 </td>
+                  <td> 30</td>
+                </tr> 
+                <tr>
+                  <td> Medium </td>
+                  <td> 32 - 34 </td>
+                  <td> 31 </td>
+                </tr> 
+                <tr>
+                  <td> Large </td>
+                  <td> 36 - 38</td>
+                  <td> 32</td>
+                </tr>
+                <tr>
+                  <td> X Large </td>
+                  <td> 40 - 42</td>
+                  <td> 32.5</td>
+                </tr>             
+              </table>
+
+            <h2  id = "hat-charts"> Hats </h2>
+
+              <table class = "sizing-table">
+                <tr>
+                  <th colspan = "3"> Classic Baseball Cap</th>
+                </tr>
+                <tr>
+                  <th> Hats Are One Size Only</th>
+                </tr> 
+              </table>
+
+              <table class = "sizing-table">
+                <tr>
+                  <th colspan = "3"> Classic Beanie</th>
+                </tr>
+                <tr>
+                  <th> Hats Are One Size Only</th>
+                </tr>  
+              </table>
+        </div> <!--size charts class-->
+      </div> <!--content class-->
+    </div><!--container class-->
+    
+    <nav> <!-- udemy day 3 rotating nav-->
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html"> Home</a></li>
+        <li><i class="fas fa-shopping-cart"></i><a href="shop.html"> Shop</a></li>
+        <li><i class="fas fa-envelope"></i><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <script src="shopscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="homestyle.css" />
+    <title>Make It Yours Apparel</title>
+  </head>
+  <body>
+
+    <div movingsearch> <!-- udemy day 4 hidden search-->
+      <div class="search">
+        <input type="text" class="input" placeholder="Search...">
+        <button class="btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div ourlogo>
+      <div class = "logo">
+        <img class = "logo",  src="makeityourslogo.png" alt="Make It Yours Logo">
+      </div>
+    </div>
+    
+
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content">
+          <div class = "box"> <!--udemy day 6 scroll animation-->
+            <table class = "companydetails-table">
+              <tr>
+                <td ><img class = "companyshirtone"  src="clothesimages/makeityoursshirt.png" alt="Make it Yours Shirt"></td>
+                <td>
+                  <h1>What is<br>
+                    <span>Make It Yours</span><br> Apparel?</h1>
+                    <p>Take the opportunity to express your creativity with us! <br>
+                        At Make It Yours Apparel, you can bring your ideas to life on clothing of your choice!
+                        Whether it is a personal addition to your closet, or an opportunity to bring a bunch of people together,
+                        with our help, you can accomplish that and so much more!
+                    </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <br>
+          <div class = "box"> <!--udemy day 6 scroll animation-->
+            <table class = "companyperfectfor-table">
+              <tr>
+                <td><h2>Make It Yours Apparel is <br> <span>PERFECT</span> for:</h2>
+                  <ul class = "event-list">
+                    <li>Family Reunions</li>
+                    <li>Sports Teams</li>
+                    <li>Group Events and Clubs</li>
+                    <li>Expressing Your Creativity</li>
+                    <li>Much More!</li>
+                  </ul>
+                </td>
+                <td><img class = "companyshirttwo",  src="clothesimages/businessrestaurant.png" alt=""></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class = "box">
+            <h1> Best Sellers</h1>
+            <div class = "picpanels"> <!-- udemy day 1 expanding panels-->
+              <div class="panel active" style="background-image: url('clothesimages/matchingtshirt.png')">
+                <h3>Classic T Shirt</h3>
+              </div>
+              <div class="panel" style="background-image: url('clothesimages/matchinghoodie.png')">
+                <h3>Classic Hoodie</h3>
+              </div>
+              <div class="panel" style="background-image: url('clothesimages/matchingsweatpants.png')">
+                <h3>Classic Sweatpants</h3>
+              </div>
+              <div class="panel" style="background-image: url('clothesimages/matchingshorts.jpeg')">
+                <h3>Classic Shorts</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class = "box">
+            <h1> What's<br> New?</h1>
+            <h2>Make it Yours Apparel <br> New: CLASSIC BEANIE!<br> Click the image to shop now!</h2>
+            <a href = shop.html><img class = "beanie-reveal",  src="clothesimages/matchingbeanies.png" alt="New Beanies"></a>
+            <!-- <div class="loading-text">0%</div> -->
+            <br><br>
+          </div>
+
+          <div class = "box">
+            <a href = shop.html><button class="page-btns">START SHOPPING NOW!</button></a>
+            <a href = contact.html><button class="page-btns">CONTACT US NOW!</button></a>
+          </div>
+
+        </div> <!--content class-->
+    </div> <!--container class-->
+
+    <nav> <!-- udemy day 3 rotating nav-->
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html"> Home</a></li>
+        <li><i class="fas fa-shopping-cart"></i><a href="shop.html"> Shop</a></li>
+        <li><i class="fas fa-envelope"></i><a href="contact.html"> Contact Us</a></li>
+      </ul>
+    </nav>
+    <script src="homescript.js"></script>
+  </body>
+</html>
